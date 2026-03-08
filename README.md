@@ -1,25 +1,36 @@
-# Lista-de-Compras
+# 🛒 Lista de Compras(Vanilla JS)
 
-🛒 Lista de Compras Dinâmica (Vanilla JS)
+Um sistema robusto de gerenciamento de carrinho de compras e lista de produtos, construído inteiramente do zero utilizando **JavaScript Puro (Vanilla JS)**, HTML5 e CSS3. 
 
-Sobre o Projeto
-Este é um projeto prático desenvolvido para treinar lógica de programação, manipulação do DOM e gerenciamento de estado usando JavaScript puro (Vanilla JS). A aplicação simula um carrinho de compras simples e direto, onde o usuário pode gerenciar seus itens e ver o impacto financeiro em tempo real.
+Este projeto foi desenvolvido com foco em fundamentos sólidos de Engenharia de Software, aplicando conceitos de **Clean Code**, **DRY (Don't Repeat Yourself)** e persistência de dados no navegador.
 
-✨ Funcionalidades
+## ✨ Funcionalidades (CRUD Completo)
 
-Adição de Produtos: Captura de nome e preço com validação (impede a adição de campos vazios).
+- **Create:** Adição de novos produtos com validação de dados (impede campos vazios ou valores negativos).
+- **Read:** Leitura e renderização dinâmica dos itens na tela, com cálculo automático e em tempo real do Valor Total.
+- **Update:** Edição de itens existentes (O usuário pode retornar os dados para os inputs para correção rápida).
+- **Delete:** Remoção individual de produtos ou limpeza completa (Zerar Carrinho) com um único clique.
+- **Persistência de Dados:** Integração com o `localStorage` da Web API. Se o usuário fechar a aba ou atualizar a página, os dados permanecem intactos.
+- **Formatação Monetária:** Utilização da API nativa `Intl.NumberFormat` para conversão e exibição impecável de valores em Real Brasileiro (BRL).
 
-Cálculo em Tempo Real: O valor total é atualizado matematicamente a cada novo item adicionado.
+## 🎨 UI/UX Design
 
-Remoção de Itens: Cada produto possui um botão de exclusão individual que, ao ser clicado, remove o item da tela e subtrai o seu valor do montante total.
+A interface foi projetada para ser limpa, moderna e responsiva:
+- **Dark Mode Elegante:** Utilização de tons de carbono escuro (#121212, #1E1E1E) contrastando com detalhes em Âmbar/Dourado e tipografia legível.
+- **Feedback Visual:** Botões com ações semânticas (Verde para Adição, Vermelho para Destruição/Alerta) e efeitos de `hover` para interatividade.
+- **Ergonomia (Focus Management):** Ao editar um item, o sistema automaticamente direciona o cursor (`focus`) para o campo de texto, otimizando o tempo do usuário.
+- **Layout Inteligente:** Estruturado com CSS Flexbox para perfeito alinhamento e espaçamento (`gap`) entre os controles.
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-HTML5: Estruturação semântica dos inputs e da lista.
+- **HTML5** (Estruturação Semântica)
+- **CSS3** (Flexbox, Estilização, Custom Scrollbar)
+- **JavaScript (ES6+)** (Manipulação de DOM, Array Methods, Web Storage API)
 
-CSS3: Estilização da interface (em desenvolvimento contínuo).
+## 🚀 Como Executar
 
-JavaScript: Lógica de negócios, escopo de funções, passagem de parâmetros e manipulação dinâmica da árvore do DOM (createElement, appendChild, .remove()).
+Como este projeto não possui dependências externas ou frameworks, a execução é imediata:
 
-🧠 O que eu aprendi com este projeto?
-O maior foco deste desafio foi quebrar um problema maior em micro-passos lógicos (a "Técnica do Robô Idiota"). Aprendi a diferença entre criar um elemento do zero na memória e atualizar um texto que já existe na tela, além de dominar a passagem de parâmetros entre funções distintas para manter o código limpo.
+1. Faça o clone deste repositório:
+   ```bash
+   git clone [https://github.com/Yahonan/Lista-De-Compras.git](https://github.com/Yahonan/Lista-De-Compras.git)
