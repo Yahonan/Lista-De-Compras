@@ -8,16 +8,25 @@
 </head>
 <body>
     <main class="container">
-        <h2>🛒Meu Carrinho</h2>
+        <h2>🛒Lista de compras</h2>
 
-    <div class="inputs">
-     <input type="text" id="nomeProduto" placeholder="Nome">
-     <input type="number" id="precoProduto" placeholder="Preço R$ ">
-     <button id="adicionarProduto" onclick="adicionarProduto()">Adicionar Produto</button>
+   <div class="area-controles">
+    
+    <div class="grupo-inputs">
+        <input type="text" id="nomeProduto" placeholder="Nome">
+        <input type="number" id="precoProduto" placeholder="Preço R$">
     </div>
+
+    <div class="grupo-botoes">
+        <button onclick="adicionarProduto()" onkeydown="enterPressionado()" class="btnAdicionar">Adicionar Produto</button>
+        <button id="btnLimparLista" class="btnRemover">Remover Lista</button>
+    </div>
+
+</div>
 
      <ul id="listaProdutos"></ul>
      <h2 id="valorTotal">Total R$ 0,00</h2>
+     
 
     </main>
     
